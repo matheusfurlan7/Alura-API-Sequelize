@@ -1,0 +1,32 @@
+{
+  "name": "api-sequelize",
+  "version": "1.0.0",
+  "description": "API para estudar o Sequelize - Curso alura",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "test": "nodemon api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusfurlan7/Alura-API-Sequelize.git"
+  },
+  "author": "Matheus Furlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusfurlan7/Alura-API-Sequelize/issues"
+  },
+  "homepage": "https://github.com/matheusfurlan7/Alura-API-Sequelize#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7",
+    "sequelize": "^6.4.0",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
