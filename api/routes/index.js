@@ -1,14 +1,18 @@
 const cors = require("cors")
 const bodyParser = require('body-parser')
 const pessoasRouter = require('../routes/pessoasRoute')
+const niveisRouter = require('./niveisRoute')
+const turmasRouter = require('./turmasRoute')
 
 module.exports = app => {
-  app.use(cors())
-  app.use(bodyParser.json())
+  app.use(
+    cors(),
+    bodyParser.json()
+  )
 
-  app.get('/', (req, res) => {
-    res.send('OK')
-  })
-
-  app.use(pessoasRouter)
+  app.use(
+    pessoasRouter,
+    niveisRouter,
+    turmasRouter
+  )
 }
